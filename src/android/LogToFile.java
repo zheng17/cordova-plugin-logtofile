@@ -59,7 +59,7 @@ public class LogToFile extends CordovaPlugin {
         rollingPolicy.setContext(lc);
 
         SizeBasedTriggeringPolicy<ILoggingEvent> triggeringPolicy = new SizeBasedTriggeringPolicy<ILoggingEvent>();
-        triggeringPolicy.setMaxFileSize("5MB");
+        // triggeringPolicy.setMaxFileSize("5MB");
         triggeringPolicy.setContext(lc);
 
         RollingFileAppender<ILoggingEvent> rollingFileAppender = new RollingFileAppender<ILoggingEvent>();
